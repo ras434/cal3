@@ -27,6 +27,15 @@ if ! command -v mandoc &>/dev/null; then
   brew install mandoc
 fi
 
+# Check to make sure cal3.cpp code file exists in current directory
+if [[ ! -f cal3.cpp ]]; then
+  echo "cal3.cpp not found. Please make sure the file exists in the current directory or try again 
+when connected to the internet."
+  exit 1
+fi
+
+
+
 # Compile cal3
 g++ cal3.cpp -o cal3
 
