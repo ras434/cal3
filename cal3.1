@@ -1,0 +1,32 @@
+.\" Manpage for cal3
+.TH CAL3 1 "April 21, 2023"
+.SH NAME
+cal3 \- display a calendar with the previous, current, and next month
+.SH SYNOPSIS
+.B cal3
+.RI [-h]
+.RI [ "MM YYYY" ]
+.SH DESCRIPTION
+.B cal3
+is a script that displays a calendar with the previous, current, and next month. You can optionally provide a date in the format "MM YYYY" to use as the +0m date. If the
+.B -h
+option is used, the current date will be highlighted in the output.
+.SH OPTIONS
+.TP
+.B \-h
+Show calendar with highlighted current date
+.SH EXAMPLES
+.IP
+cal3
+.IP
+cal3 -h
+.IP
+cal3 10 2023
+.IP
+cal3 -h 10 2023
+.SH AUTHOR
+Written by Rob Schmidt.
+.SH SEE ALSO
+.BR cal (1),
+.BR ncal (1),
+.BR date (1)

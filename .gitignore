@@ -1,0 +1,6 @@
+# Ignore macOS metadata
+.DS_Store
+
+# Ignore compiled binary
+cal3
+
