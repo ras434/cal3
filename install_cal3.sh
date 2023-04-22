@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Check for updates
+echo "Checking for updates from GitHub..."
+curl -fsSLO https://raw.githubusercontent.com/ras434/cal3/main/cal3.cpp || {
+  echo "Failed to fetch the latest cal3.cpp from GitHub. Using local file if it exists."
+}
+curl -fsSLO https://raw.githubusercontent.com/ras434/cal3/main/install_cal3.sh || {
+  echo "Failed to fetch the latest install_cal3.sh from GitHub. Using local file if it exists."
+}
+
 # Check for macOS
 if [[ "$(uname)" != "Darwin" ]]; then
   echo "This script is intended for macOS only."
