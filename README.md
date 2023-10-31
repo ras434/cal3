@@ -1,3 +1,11 @@
+# UPDATE:
+I'll be re-writing this completely or possibly deleting this.  To accomplish what this was intending to do, you can simply run the following command (that is already built-in and part of 'cal'):
+
+```bash
+cal -B 1 -A 1
+```
+
+
 # cal3
 
 cal3 is a command-line calendar utility that displays a simple calendar with optional highlighted 
